@@ -1,16 +1,19 @@
-# 物业管理系统
+# Building Management System
 
-这是一个基于 Next.js 开发的物业管理系统，用于支持物业的日常管理工作。
+A Next.js-based building management system designed to support daily building operations and utility management.
 
-## 功能特点
+## Features
 
-- 维修申请管理
-- 物业费用缴纳
-- 文件下载中心
-- 公告发布
-- 响应式设计，支持移动端访问
+- Maintenance Request Management
+- Utility Bills Management
+  - Electricity Bills
+  - Water Bills
+  - Gas Bills
+- Document Download Center
+- Announcement System
+- Responsive Design for Mobile Access
 
-## 技术栈
+## Tech Stack
 
 - Next.js 14
 - TypeScript
@@ -18,72 +21,72 @@
 - React
 - Node.js
 
-## 开始使用
+## Getting Started
 
-1. 克隆项目
+1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/building-management-system.git
 cd building-management-system
 ```
 
-2. 安装依赖
+2. Install dependencies
 ```bash
 npm install
 ```
 
-3. 配置环境变量
-复制 `.env.example` 文件为 `.env`，并填写相应的配置信息：
+3. Configure environment variables
+Copy `.env.example` to `.env` and fill in the configuration:
 ```bash
 cp .env.example .env
 ```
 
-4. 运行开发服务器
+4. Run development server
 ```bash
 npm run dev
 ```
 
-5. 构建生产版本
+5. Build for production
 ```bash
 npm run build
 ```
 
-## 部署
+## Deployment
 
-本项目可以部署到 Vercel 平台：
+This project can be deployed on Vercel:
 
-1. 在 Vercel 上创建新项目
-2. 连接 GitHub 仓库
-3. 配置环境变量
-4. 部署项目
+1. Create a new project on Vercel
+2. Connect your GitHub repository
+3. Configure environment variables
+4. Deploy
 
-## 项目结构
+## Project Structure
 
 ```
 building-management-system/
-├── app/                    # 应用程序主目录
-│   ├── maintenance/       # 维修申请页面
-│   ├── payments/         # 物业费缴纳页面
-│   └── documents/        # 文件下载页面
-├── public/                # 静态资源
-├── styles/                # 样式文件
-└── package.json          # 项目配置文件
+├── app/                    # Main application directory
+│   ├── maintenance/       # Maintenance request page
+│   ├── payments/         # Utility bills payment page
+│   └── documents/        # Document downloads page
+├── public/                # Static assets
+├── styles/                # Style files
+└── package.json          # Project configuration
 ```
 
-## 环境变量
+## Environment Variables
 
-项目使用以下环境变量：
+The project uses the following environment variables:
 
-- `NEXT_PUBLIC_SITE_NAME`: 网站名称
-- `NEXT_PUBLIC_COMPANY_NAME`: 公司名称
-- `NEXT_PUBLIC_CONTACT_EMAIL`: 联系邮箱
-- `NEXT_PUBLIC_CONTACT_PHONE`: 联系电话
-- `API_SECRET_KEY`: API密钥
-- `DATABASE_URL`: 数据库连接URL
+- `NEXT_PUBLIC_SITE_NAME`: Website name
+- `NEXT_PUBLIC_COMPANY_NAME`: Company name
+- `NEXT_PUBLIC_CONTACT_EMAIL`: Contact email
+- `NEXT_PUBLIC_CONTACT_PHONE`: Contact phone
+- `API_SECRET_KEY`: API secret key
+- `DATABASE_URL`: Database connection URL
 
-## 贡献
+## Contributing
 
-欢迎提交 Issue 和 Pull Request。
+Issues and Pull Requests are welcome.
 
-## 许可证
+## License
 
 MIT
