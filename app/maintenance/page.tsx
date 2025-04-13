@@ -14,9 +14,9 @@ export default function MaintenancePage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: 实现表单提交逻辑
+    // TODO: Implement form submission logic
     console.log('Form submitted:', formData);
-    alert('维修申请已提交！');
+    alert('Maintenance request submitted!');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -32,9 +32,9 @@ export default function MaintenancePage() {
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
-            <h1 className="text-3xl font-bold text-gray-900">维修申请</h1>
+            <h1 className="text-3xl font-bold text-gray-900">Maintenance Request</h1>
             <Link href="/" className="text-blue-600 hover:text-blue-800">
-              返回首页
+              Back to Home
             </Link>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function MaintenancePage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                姓名
+                Name
               </label>
               <input
                 type="text"
@@ -60,7 +60,7 @@ export default function MaintenancePage() {
 
             <div>
               <label htmlFor="unit" className="block text-sm font-medium text-gray-700">
-                单元号
+                Unit Number
               </label>
               <input
                 type="text"
@@ -75,7 +75,7 @@ export default function MaintenancePage() {
 
             <div>
               <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                联系电话
+                Contact Phone
               </label>
               <input
                 type="tel"
@@ -90,7 +90,7 @@ export default function MaintenancePage() {
 
             <div>
               <label htmlFor="description" className="block text-sm font-medium text-gray-700">
-                维修描述
+                Issue Description
               </label>
               <textarea
                 name="description"
@@ -105,7 +105,7 @@ export default function MaintenancePage() {
 
             <div>
               <label htmlFor="preferredTime" className="block text-sm font-medium text-gray-700">
-                期望维修时间
+                Preferred Maintenance Time
               </label>
               <input
                 type="datetime-local"
@@ -123,7 +123,7 @@ export default function MaintenancePage() {
                 type="submit"
                 className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
-                提交申请
+                Submit Request
               </button>
             </div>
           </form>
